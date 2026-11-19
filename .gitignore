@@ -1,0 +1,6 @@
+skills.local/
+my-config.env
+*.env
+!config.example.env
+.DS_Store
+__pycache__/

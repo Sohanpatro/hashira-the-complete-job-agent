@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-label="Hashira multi-agent architecture: you talk to the Hashira lead, which routes to prep and search skills, all reading and writing Google Drive files">
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+  <rect width="1000" height="560" fill="#ffffff"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <rect x="410" y="20" width="180" height="56" rx="28" fill="#0f172a"/><text x="500" y="54" fill="#fff" font-size="18" font-weight="700">You</text>
+    <rect x="340" y="120" width="320" height="76" rx="12" fill="#f97316"/>
+    <text x="500" y="152" fill="#fff" font-size="20" font-weight="700">hashira (lead)</text>
+    <text x="500" y="178" fill="#fff" font-size="14">standup · close · weekly review · routing</text>
+    <rect x="60" y="250" width="380" height="110" rx="12" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+    <text x="250" y="282" font-size="18" font-weight="700" fill="#0f172a">hashira-prep</text>
+    <text x="250" y="308" font-size="14" fill="#334155">study · quizzes · drills · JD-tailored mocks</text>
+    <text x="250" y="330" font-size="14" fill="#334155">company briefs · debriefs · story bank</text>
+    <rect x="560" y="250" width="380" height="110" rx="12" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+    <text x="750" y="282" font-size="18" font-weight="700" fill="#0f172a">hashira-search</text>
+    <text x="750" y="308" font-size="14" fill="#334155">hunt &amp; score · tailor resume · apply</text>
+    <text x="750" y="330" font-size="14" fill="#334155">referrals · LinkedIn · pay &amp; offers</text>
+    <rect x="60" y="420" width="880" height="110" rx="12" fill="#f1f5f9" stroke="#94a3b8"/>
+    <text x="500" y="452" font-size="18" font-weight="700" fill="#0f172a">Google Drive = memory</text>
+    <text x="500" y="480" font-size="14" fill="#334155">Tracker sheet: State · Scoreboard · Pipeline · Targets · Network · Prep Log · Journal</text>
+    <text x="500" y="504" font-size="14" fill="#334155">Docs: Profile &amp; Story Bank · Prep Library · Search Library · Playbook · Resumes · Company briefs</text>
+  </g>
+  <g stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)">
+    <path d="M500 76V118"/><path d="M420 196L300 248"/><path d="M580 196L700 248"/>
+    <path d="M250 360V418"/><path d="M750 360V418"/>
+    <path d="M680 158H960V470H942" stroke-dasharray="6 5"/>
+  </g>
+  <text x="968" y="150" font-family="Inter, Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="end">reads/writes</text>
+</svg>

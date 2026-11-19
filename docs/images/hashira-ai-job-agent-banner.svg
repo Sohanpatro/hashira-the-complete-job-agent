@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="Hashira: the complete AI job search agent built on Claude skills">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#e2e8f0" stroke-width="1">
+    <path d="M0 160H1280M0 320H1280M0 480H1280M320 0V640M640 0V640M960 0V640"/>
+  </g>
+  <!-- five pillars -->
+  <g transform="translate(860 150)">
+    <circle cx="160" cy="170" r="150" fill="none" stroke="#334155" stroke-width="2"/>
+    <circle cx="160" cy="170" r="46" fill="url(#blade)"/>
+    <text x="160" y="178" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="middle">LEAD</text>
+    <g font-family="Inter, Arial, sans-serif" font-size="15" fill="#e2e8f0" text-anchor="middle">
+      <circle cx="160" cy="30" r="34" fill="#1e293b" stroke="#f97316" stroke-width="2"/><text x="160" y="35">Skills</text>
+      <circle cx="293" cy="127" r="34" fill="#1e293b" stroke="#f97316" stroke-width="2"/><text x="293" y="132">Prep</text>
+      <circle cx="242" cy="283" r="34" fill="#1e293b" stroke="#f97316" stroke-width="2"/><text x="242" y="288">Pipeline</text>
+      <circle cx="78" cy="283" r="34" fill="#1e293b" stroke="#f97316" stroke-width="2"/><text x="78" y="288">Network</text>
+      <circle cx="27" cy="127" r="34" fill="#1e293b" stroke="#f97316" stroke-width="2"/><text x="27" y="132">Offer</text>
+    </g>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="90" y="230" font-size="96" font-weight="800" fill="#f8fafc">Hashira</text>
+    <rect x="94" y="252" width="300" height="8" rx="4" fill="url(#blade)"/>
+    <text x="90" y="320" font-size="34" font-weight="600" fill="#e2e8f0">The complete AI job search agent</text>
+    <text x="90" y="372" font-size="24" fill="#94a3b8">Multi-agent Claude skills: study, mock interviews,</text>
+    <text x="90" y="406" font-size="24" fill="#94a3b8">tailored resumes, applications and offers. Human approves.</text>
+    <text x="90" y="520" font-size="20" fill="#64748b">claude · agent-skills · google-drive · human-in-the-loop</text>
+  </g>
+</svg>
