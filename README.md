@@ -24,6 +24,7 @@
 - [Safety and privacy](#safety-and-privacy)
 - [Roadmap](#roadmap)
 - [FAQ](#faq)
+- [Works with Friday](#works-with-friday)
 - [Contributing](#contributing)
 
 ## Why Hashira
@@ -51,7 +52,7 @@ flowchart LR
     L -->|study, drill, mock, brief| P[hashira-prep]
     L -->|hunt, apply, network, offer| S[hashira-search]
     P & S & L <-->|read / write as they go| D[(Google Drive<br/>Tracker sheet + docs)]
-    L -->|day plans| F[optional calendar agent]
+    L -->|day plans| F[Friday planning agent]
     S -.->|drafts only| A{{Your approval}}
     A -->|you send / submit| W[Employers & contacts]
 ```
@@ -135,6 +136,9 @@ hashira-the-complete-job-agent/
 **Which Claude plan do I need?** Any plan that supports Skills and the Google Drive connector.
 
 **Can I use it for non-AI roles?** Yes. Change the target definition and rubrics in your Search and Prep Library docs.
+
+## Works with Friday
+Hashira decides each day's study, prep and search blocks. [Friday](https://github.com/Sohanpatro/friday-planning-agent), the AI weekly planning agent, fits them into your real Google Calendar and reports back what fit.
 
 ## Contributing
 Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). If Hashira helps your search, **⭐ star the repo** so others can find it.
