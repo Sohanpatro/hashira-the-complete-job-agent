@@ -140,6 +140,8 @@ hashira-the-complete-job-agent/
 ## Works with Friday
 Hashira decides each day's study, prep and search blocks. [Friday](https://github.com/Sohanpatro/friday-planning-agent), the AI weekly planning agent, fits them into your real Google Calendar and reports back what fit.
 
+Built by **Sohan Patro**, a software engineer building agentic AI systems. [LinkedIn](https://www.linkedin.com/in/sohanpatro/) · [GitHub](https://github.com/Sohanpatro)
+
 ## Contributing
 Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). If Hashira helps your search, **⭐ star the repo** so others can find it.
 
