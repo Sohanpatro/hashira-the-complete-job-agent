@@ -81,7 +81,7 @@ sequenceDiagram
 
 ## Quick start
 1. **Get the skills.** Clone this repo, or download the three folders in [`skills/`](skills/).
-2. **Set up Drive.** Create a "Jobs / Hashira" folder, a Google Sheet with one tab per CSV in [`templates/tracker/`](templates/tracker/), and the docs listed in [`config.example.md`](config.example.md). Start the profile doc from [`templates/profile-and-story-bank.md`](templates/profile-and-story-bank.md).
+2. **Set up Drive.** Create a "Jobs / Hashira" folder, a Google Sheet with one tab per CSV in [`templates/tracker/`](templates/tracker/), and the docs listed in [`config.example.md`](config.example.md). Start the profile doc from [`templates/profile-and-story-bank.md`](templates/profile-and-story-bank.md). Start the lessons doc from [`templates/lessons-learned.md`](templates/lessons-learned.md) and your master resume from [`templates/resume-template.tex`](templates/resume-template.tex).
 3. **Configure and install.** Copy `config.example.env` to `my-config.env`, fill in your IDs, then run:
    ```bash
    scripts/configure.sh my-config.env
@@ -108,7 +108,9 @@ hashira-the-complete-job-agent/
 │   └── hashira-search/   # hunt, apply, resume, network, LinkedIn, offers
 ├── templates/
 │   ├── tracker/          # one CSV per Google Sheet tab
-│   └── profile-and-story-bank.md
+│   ├── profile-and-story-bank.md
+│   ├── lessons-learned.md # standing rules + rejection debrief protocol
+│   └── resume-template.tex # single-column LaTeX resume, ATS-readable
 ├── scripts/configure.sh  # fills {{PLACEHOLDERS}} into skills.local/
 ├── docs/images/          # banner, architecture, social preview
 ├── config.example.md / config.example.env

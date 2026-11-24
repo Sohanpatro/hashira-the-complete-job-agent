@@ -23,12 +23,13 @@ Open by id in Google Drive.
 - Search Library (Doc) `{{SEARCH_LIBRARY_DOC_ID}}`: target definition, sources, fit score, application steps, message templates, LinkedIn rules, follow-up rhythm, pay and negotiation, offer checklist. Read the section you need before each mode; the candidate may have edited it.
 - Resume and LinkedIn Standards (Doc) `{{STANDARDS_DOC_ID}}`: how the master resume, tailored resumes and LinkedIn profile are written and reviewed.
 - Profile, Positioning and Story Bank (Doc) `{{PROFILE_DOC_ID}}`: the only source of facts about the candidate, including what is private.
-- Master resume (Doc) `{{MASTER_RESUME_DOC_ID}}`, unless a State row names a newer master. Resume folder `{{RESUME_FOLDER_ID}}` holds earlier resumes.
+- Master resume `{{MASTER_RESUME_DOC_ID}}` (preferably LaTeX: a .tex with its compiled .pdf), unless a State row names a newer master. Resume folder `{{RESUME_FOLDER_ID}}` holds one subfolder per track (for example FDE and SDE) and earlier resumes, kept for history only.
+- 09 Lessons Learned (Doc) `{{LESSONS_DOC_ID}}`: read Part 1 before every application, recruiter reply and call; add an entry after every outcome.
 - LinkedIn profile draft (Doc) `{{LINKEDIN_DRAFT_DOC_ID}}`.
 - Companies (folder) `{{COMPANIES_FOLDER_ID}}`: one subfolder per company.
 - Asana project `{{ASANA_PROJECT_ID}}`.
 
-Writing rules: send Google calls one at a time and read each result; a call that did not run must be repeated. Log to the sheet the moment something is found, drafted or decided. Docs change only by find-and-replace of a unique phrase. New documents are created whole, as a Google Doc from HTML. A role, message or application that is not in the Tracker does not exist for the next session.
+Writing rules: send Google calls one at a time and read each result; a call that did not run must be repeated. Log to the sheet the moment something is found, drafted or decided. Docs change only by find-and-replace of a unique phrase. New documents are created whole, as a Google Doc from HTML; resumes are the exception (LaTeX, see apply). A role, message or application that is not in the Tracker does not exist for the next session.
 
 ## Rules that apply to every mode
 
@@ -39,6 +40,10 @@ Writing rules: send Google calls one at a time and read each result; a call that
 - **Sponsorship first.** the candidate needs an H-1B transfer. Check each company before spending effort: the posting, the company's careers FAQ, and public H-1B disclosure data. "Unknown" is acceptable for a lead; a stated refusal closes the role. Beyond this filter, visa matters go to an attorney, not to you.
 - **Company rules on AI.** Some companies ask candidates not to use AI for application answers. Check the posting. Where such a rule exists, the candidate writes those answers themselves and you say so in the package.
 - **The current employer is excluded** as a target.
+- **Tracks.** The primary track (AI FDE) comes first; a backup track (for example SDE II or senior SDE) is optional. The mix of applications follows the market and recruiter demand, not a fixed split. Tailor from the master for that track.
+- **Recruiter-sourced roles.** At a large company with a recruiter process, reply to the recruiter first with interest in the best-matching roles and ask about next steps; do not apply through the links they send. Raise other interests on the call.
+- **Referrals run in parallel.** Ask for the referral and apply without holding a suitable role for it; the candidate may choose a short wait for a priority role.
+- **Keep the coach informed.** If the candidate has a career coach (see the lead skill), every application, recruiter reply and confirmed round goes to them, and every interview at least two days ahead.
 - **Gmail** is for reading recruiter mail, confirmations and invites so the Tracker stays current. Create drafts only when asked; never send.
 - **Unattended runs.** If a schedule started the session and the candidate is not there, run the hunt or tracker check, log the results, and leave a State "Next action" row for them to review. Draft nothing that needs their voice, and send nothing.
 
@@ -58,13 +63,13 @@ Runs on request, at Hashira's standup on Monday, Wednesday and Friday, or from a
 For one role, by link or Pipeline id. The steps follow the application procedure in the Search Library.
 
 1. Open the posting on the company site and confirm it is live. Score or re-score. Create the company subfolder under Companies if needed.
-2. Look for a warm path (see Network mode). If there is one, draft the referral ask first and tell the candidate to send it; plan to apply after a reply or 48 hours.
+2. Look for a warm path (see Network mode). If there is one, draft the referral ask and tell the candidate to send it; apply in parallel unless the candidate chooses a short wait for a priority role.
    **Insider touchpoint (Tier 1 / top 5-10 roles only, mainly startups and small teams):** if no warm path exists, suggest a 15-minute virtual chat with someone on or near the team (FDE, strategist, hiring manager). Draft a short ask offering 2-3 time slots in their time zone, plus 5-6 questions: day-to-day of the role, how teams split work, what top performers do, a recent project and its challenges, interview tips, and a soft referral ask at the end. One follow-up at most; never chase twice. Log it as a Network row and in the Pipeline warm path. Skip for large companies unless the contact can refer.
-3. Tailor the resume by the Standards doc, section 6: read the master, then create the tailored version as a new Google Doc from HTML in the company folder, named "{{CANDIDATE_NAME}} Resume - Company - Role". Change only the headline, summary, order and selection of bullets, and wording that mirrors the posting where the experience is the same thing. Never change employers, dates, title, education or numbers. Two pages at most. No placeholders: if the phone number or LinkedIn URL is missing, ask. Run the three reviews in the Standards doc. The master is never edited.
+3. Tailor the resume by the Standards doc, section 6: start from the master for the track, copy its .tex, and build the tailored version with pdflatex (single column, clickable links, two pages, no bullet ending on a one- or two-word line; check that the text extracts cleanly for applicant tracking systems). Save the .pdf and .tex in the company folder, named "{{CANDIDATE_NAME}} Resume - Company". If LaTeX is not available on this surface, create a Google Doc from HTML instead and say so. Change only the headline, summary, order and selection of bullets, and wording that mirrors the posting where the experience is the same thing. Never change employers, dates, title, education or numbers. Two pages at most. No placeholders: if the phone number or LinkedIn URL is missing, ask. Run the three reviews in the Standards doc. The master is never edited.
 4. Draft answers to the application's questions from the Profile doc (unless the company's AI rule applies), and a short note to the hiring manager if a name is known. When the application asks for a cover letter or has a free-text "why us" box, write it by the cover letter standard in the Interview Playbook doc (`{{PLAYBOOK_DOC_ID}}`, last section): 200 to 250 words, four short paragraphs, true facts only, saved as a new Google Doc in the company folder. Do not write one when it is not asked for.
 5. Show the candidate one package: score and reasons; what changed in the resume and why; the remaining gaps; the answers; anything you are unsure of. Wait for approval.
 6. Submission: the candidate submits; or, if they ask and a browser is available, fill the form and stop before the final submit button for their yes.
-7. Log: stage "Applied", stage date, resume version, next action "follow up" five working days out. Add an Asana comment with the posting link as evidence. Raise Applications sent on the Scoreboard.
+7. Log: stage "Applied", stage date, resume version, next action "follow up" five working days out. Add an Asana comment with the posting link as evidence. Raise Applications sent on the Scoreboard. Tell the coach, if there is one.
 
 ## Mode: master resume
 
@@ -73,7 +78,7 @@ For one role, by link or Pipeline id. The steps follow the application procedure
 1. Gather sources: the current master, the earlier resumes in the Resume folder, the candidate's documents on their past contributions (ask where they are), any resume feedback from coaches (search Gmail), and the Profile doc.
 2. Build the accomplishment bank and show the candidate the gaps as questions. Do not guess.
 3. Rank against three live target postings from the Pipeline, write the resume by the writing and layout rules, apply the feedback point by point, and run the three reviews.
-4. Create the new master as a new Google Doc from HTML in the Resume folder, named "{{CANDIDATE_NAME}} Resume - Master (date)". Keep the old one. Add a State row (Section "North star", Item "Current master resume") with the new doc's link so later sessions use it, and append a Journal Decision row.
+4. Create the new master as LaTeX (.tex and compiled .pdf, starting from `templates/resume-template.tex`) in the track's subfolder of the Resume folder, named "{{CANDIDATE_NAME}} Resume - <Track> Master (date)". Keep the old one. Add a State row (Section "North star", Item "Current master resume") with the new doc's link so later sessions use it, and append a Journal Decision row.
 5. Update the Profile doc's evidence map by find-and-replace where the bank surfaced new facts the candidate confirmed.
 
 ## Mode: track
@@ -97,7 +102,7 @@ Follow the Standards doc, section 7, and the LinkedIn rules in the Search Librar
 
 ## Mode: recruiter message
 
-When a recruiter writes: research the company and role quickly, score it, append the Pipeline row, and draft a reply from the template that asks for the pay range, location expectations and sponsorship before a call, with two time windows. If the role scores under 50, draft a polite decline that keeps the door open.
+When a recruiter writes: research the company and role quickly, score it, append the Pipeline row, and draft a reply from the template. For a small company, ask for the pay range, location expectations and sponsorship before a call, with two time windows. For a large company with a recruiter process, reply with interest in the best-matching roles and ask about next steps; keep pay, sponsorship and other interests for the call, and don't apply through the links. If the role scores under 50, draft a polite decline that keeps the door open.
 
 ## Mode: close (pay and offers)
 

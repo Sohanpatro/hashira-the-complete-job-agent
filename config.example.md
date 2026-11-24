@@ -13,10 +13,11 @@ The skills use `{{PLACEHOLDER}}` values. After you create your Google Drive file
 | `{{SEARCH_LIBRARY_DOC_ID}}` | Doc "04 Search Library" | The doc URL |
 | `{{STANDARDS_DOC_ID}}` | Doc "07 Resume and LinkedIn Standards" | The doc URL |
 | `{{PLAYBOOK_DOC_ID}}` | Doc "Interview Playbook and Question Bank" | The doc URL |
-| `{{MASTER_RESUME_DOC_ID}}` | Your master resume (Google Doc) | The doc URL |
-| `{{RESUME_FOLDER_ID}}` | Folder of earlier resumes | The folder URL |
+| `{{MASTER_RESUME_DOC_ID}}` | Your master resume (a LaTeX .tex/.pdf from `templates/resume-template.tex`, or a Google Doc) | The file URL |
+| `{{RESUME_FOLDER_ID}}` | Resume folder (one subfolder per track, plus earlier resumes) | The folder URL |
 | `{{LINKEDIN_DRAFT_DOC_ID}}` | LinkedIn profile draft doc | The doc URL |
 | `{{COMPANIES_FOLDER_ID}}` | Folder "Companies" (one subfolder per company) | The folder URL |
+| `{{LESSONS_DOC_ID}}` | Doc "09 Lessons Learned" (start from `templates/lessons-learned.md`) | The doc URL |
 | `{{ASANA_PROJECT_NAME}}` / `{{ASANA_PROJECT_ID}}` | Optional Asana project for job-search tasks | The Asana project URL |
 
 Keep your filled-in copies **out of git**. `.gitignore` already excludes `skills.local/`.

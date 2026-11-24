@@ -1,0 +1,105 @@
+%-------------------------------------------------------------------------------
+% Hashira resume template (single column, ATS-readable, clickable links)
+% Build: pdflatex resume.tex   (run twice)
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage[left=0.6in,right=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[protrusion=true,expansion=true]{microtype}
+
+% Machine-readable text for applicant tracking systems
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\definecolor{linkblue}{RGB}{20,60,140}
+\hypersetup{
+  pdftitle={Your Name - Resume},
+  pdfauthor={Your Name},
+  pdfsubject={AI Forward Deployed Engineer},
+  pdfkeywords={Forward Deployed Engineer, AI Engineer, LLM agents}
+}
+% Visible but quiet link style
+\newcommand{\link}[2]{\href{#1}{\color{linkblue}#2}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+% Body size 10.5 pt
+\AtBeginDocument{\fontsize{10.8}{13}\selectfont}
+\interlinepenalty=10000
+\raggedbottom
+
+% Section headings: small caps, rule underneath
+\titleformat{\section}{\fontsize{12}{14}\selectfont\bfseries}{}{0pt}{\MakeUppercase}[\vspace{-7pt}\rule{\textwidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+% Bullets
+\setlist[itemize]{leftmargin=1.1em,label={\small\textbullet},itemsep=1.2pt,parsep=0pt,topsep=1.5pt,partopsep=0pt}
+
+% Entry heading: bold left, right-aligned date
+\newcommand{\entry}[2]{\textbf{#1}\hfill\textbf{#2}\par}
+\newcommand{\subentry}[2]{\textit{#1}\hfill\textit{#2}\par}
+\newcommand{\group}[1]{\vspace{3pt}\textbf{\textit{#1}}\par}
+
+\begin{document}
+
+%----------------------------------- HEADER ------------------------------------
+\begin{center}
+  {\fontsize{22}{26}\selectfont\bfseries Your Name}\\[3pt]
+  {\bfseries Target Title \,|\, Two Strengths \,|\, One Proof Point}\\[2pt]
+  {\fontsize{9.8}{12}\selectfont City, ST \,|\, \link{tel:+10000000000}{(000) 000-0000} \,|\,
+  \link{mailto:you@example.com}{you@example.com} \,|\,
+  \link{https://www.linkedin.com/in/your-handle}{linkedin.com/in/your-handle} \,|\,
+  \link{https://github.com/your-handle}{github.com/your-handle}}
+\end{center}
+\vspace{-6pt}
+
+\section{Professional Summary}
+Three to five lines: who you are, the two strengths that match the role, and the one result that proves it.
+
+\section{Core Skills}
+\begin{itemize}[label={},leftmargin=1.2em,itemindent=-1.2em,itemsep=1pt]
+  \item \textbf{AI and agents:} skill, skill, skill
+  \item \textbf{Languages:} Python, \ldots
+  \item \textbf{Cloud and systems:} \ldots
+\end{itemize}
+
+\section{Professional Experience}
+\entry{Company \,|\, City, ST}{Start -- Present}
+\subentry{Your Title, Team}{}
+\group{Theme of this group of bullets}
+\begin{itemize}
+  \item Strong verb, what you built, how, and the measurable result (\textbf{bold the number}). Two lines at most.
+  \item One idea per bullet; reword until the last line is not one or two words.
+\end{itemize}
+
+\section{Projects and Research}
+\entry{Project name \,|\, \normalfont\textit{tech, tech}}{Year}
+\begin{itemize}
+  \item What it does and the result (\link{https://github.com/your-handle/project}{code}).
+\end{itemize}
+
+\section{Publications}
+\begin{itemize}
+  \item Authors (Year). \link{https://arxiv.org/abs/0000.00000}{Paper title}. \textit{Venue}, pp.\ x--y.
+\end{itemize}
+
+\section{Education}
+\entry{University \,|\, \normalfont City, Country}{Start -- End}
+\subentry{Degree, Major}{GPA}
+\begin{itemize}
+  \item Honors, teaching, rankings.
+\end{itemize}
+
+\end{document}
